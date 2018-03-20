@@ -1,3 +1,17 @@
+
+# My notes
+* My modifications for `build.grale`
+    * Adding test dir for test case for incorrect java program
+    * Adding task to Copy dependencies to `./build/libs`
+
+* Getting started
+    * Building program without testing (test for incorrect program triger failure)
+    `gradle build -x test`
+    * Copy dependencies to libs folder
+    `gradle copyToLib`
+    * Testing a program 
+    `java -cp ./:build/libs/* org.junit.runner.JUnitCore java_testcases.junit.BITCOUNT_TEST`
+    
 # QuixBugs Benchmark [![Build Status](https://travis-ci.org/jkoppel/QuixBugs.svg?branch=master)](https://travis-ci.org/jkoppel/QuixBugs) [![Coverage Status](https://coveralls.io/repos/github/jkoppel/QuixBugs/badge.svg?branch=master)](https://coveralls.io/repos/github/jkoppel/QuixBugs)
 
 The QuixBugs benchmark consists of 40 programs from the Quixey Challenge translated into both Python and Java. Each contains a one-line defect, along with passing (when possible) and failing testcases. Defects fall into one of 14 defect classes. Corrected Python programs are also supplied. Quixbugs is intended for investigating cross-language performance by _multi-lingual_ program repair tools. For more details, see the [paper](quixbugs.pdf).
