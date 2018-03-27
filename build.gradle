@@ -48,6 +48,6 @@ sourceSets {
 }
 
 task copyToLib(type: Copy) {
-    into "$buildDir/libs"
+    into "libs"
     from configurations.runtime
 }
