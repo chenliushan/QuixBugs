@@ -1,19 +1,11 @@
-package java_testcases.junit;
+package java_testcases.junit.crt_program;
 
-import static org.junit.Assert.assertEquals;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-import org.junit.Test;
-
-import java_programs.MINIMUM_SPANNING_TREE;
+import correct_java_programs.MINIMUM_SPANNING_TREE;
 import java_programs.Node;
 import java_programs.WeightedEdge;
+import org.junit.Test;
+
+import java.util.*;
 
 public class MINIMUM_SPANNING_TREE_TEST {
 
